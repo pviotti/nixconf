@@ -114,6 +114,8 @@
     git
     tig
     ranger
+    zsh
+    zsh-powerlevel10k
     alejandra
   ];
 
