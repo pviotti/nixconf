@@ -112,6 +112,7 @@
      git
      tig
      ranger
+     alejandra
   ];
 
   home-manager = {
