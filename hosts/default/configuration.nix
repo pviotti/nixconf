@@ -111,6 +111,7 @@
      firefox
      git
      tig
+     ranger
   ];
 
   home-manager = {
