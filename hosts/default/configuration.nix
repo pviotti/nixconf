@@ -110,6 +110,7 @@
     neovim
     wget
     firefox
+    vscode
     git
     tig
     ranger
