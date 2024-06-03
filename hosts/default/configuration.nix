@@ -110,6 +110,7 @@
      wget
      firefox
      git
+     tig
   ];
 
   home-manager = {
