@@ -54,9 +54,9 @@
   services.xserver.desktopManager.gnome.enable = true;
 
   # Configure keymap in X11
-  services.xserver = {
+  services.xserver.xkb = {
     layout = "ie";
-    xkbVariant = "";
+    variant = "";
   };
 
   # Configure console keymap
@@ -102,6 +102,7 @@
   # Allow unfree packages
   nixpkgs.config.allowUnfree = true;
 
+
   # List packages installed in system profile. To search, run:
   # $ nix search wget
   environment.systemPackages = with pkgs; [
@@ -145,4 +146,7 @@
   # (e.g. man configuration.nix or on https://nixos.org/nixos/options.html).
   system.stateVersion = "24.05"; # Did you read the comment?
 
+  # Virtualbox and its guest additions
+  virtualisation.virtualbox.guest.enable = true;
+  #virtualisation.virtualbox.guest.x11 = true;
 }
